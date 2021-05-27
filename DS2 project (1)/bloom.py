@@ -1,6 +1,8 @@
 import mmh3    #for hash function
 import math
 
+#To populate the data from .txt file into list.
+
 file1 = open('books.txt', 'r')   #opens file with book titles
 file2 = open('data.txt', 'r')    #open file with book's data
 
