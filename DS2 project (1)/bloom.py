@@ -40,7 +40,7 @@ def add(lines):
 #main bllom functions
 def bloom(obj):
     bin_array = add(books)
-    in1 = mmh3.hash(obj) % len(bin_array)
+    in1 = mmh3.hash(obj) % len(bin_array)  #constant complexity, as it is comparing only, with given index.
     in2 = hash(obj) % len(bin_array)
     if bin_array[in1]==1 & bin_array[in2]==1:   #to check if there are 1s at specific index
         return True                             #item found
